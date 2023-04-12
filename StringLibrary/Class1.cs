@@ -2,6 +2,7 @@
 
 //Andres Cuero
 //301203787
+//Use to GitHub SCM
 public static class StringLibrary
 {
     public static bool StartsWithUpper(this string? str)

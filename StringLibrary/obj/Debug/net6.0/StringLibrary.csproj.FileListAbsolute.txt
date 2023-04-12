@@ -10,3 +10,15 @@ C:\Users\andre\source\repos\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\
 C:\Users\andre\source\repos\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.dll
 C:\Users\andre\source\repos\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\ref\StringLibrary.dll
 C:\Users\andre\source\repos\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.pdb
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\bin\Debug\net6.0\StringLibrary.deps.json
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\bin\Debug\net6.0\StringLibrary.dll
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\bin\Debug\net6.0\ref\StringLibrary.dll
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\bin\Debug\net6.0\StringLibrary.pdb
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.csproj.AssemblyReference.cache
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.AssemblyInfoInputs.cache
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.AssemblyInfo.cs
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.csproj.CoreCompileInputs.cache
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.dll
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\ref\StringLibrary.dll
+C:\Users\andre\Source\Repos\andresfelipecg\ClassLibraryProjects\StringLibrary\obj\Debug\net6.0\StringLibrary.pdb
