@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-latest'
+  name: 'Self-Hosted-Agent-Lab4'
 
 variables:
   solution: '**/*.sln'
@@ -15,20 +15,36 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: NuGetToolInstaller@1
-
+- task: NuGetToolInstaller@0
+  displayName: 'Use NuGet 4.4.1'
+  inputs:
+    versionSpec: 4.4.1
+    
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore'
+  inputs:
+    command: restore
+    
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build'
+  inputs:
+    command: build
+  
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet pack'
+  inputs:
+    command: pack
+    versioningScheme: byPrereleaseNumber
+    
 - task: NuGetCommand@2
+  displayName: 'NuGet push'
   inputs:
-    restoreSolution: '$(solution)'
-
-- task: VSBuild@1
+    command: push
+    publishVstsFeed: '8169c1d1-a0e7-42cb-812d-be6fc288e7e9/9c918022-5432-4605-9e43-d954f2e17271'
+    
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
   inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: '$(Parameters.ArtifactName)'
+  condition: succeededOrFailed()
