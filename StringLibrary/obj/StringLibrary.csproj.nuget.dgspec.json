@@ -22,7 +22,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/acuerogi/8169c1d1-a0e7-42cb-812d-be6fc288e7e9/_packaging/feed-andres-cuero-lab4-Q1/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/in3/_packaging/feed-andres-cuero-lab4-Q1/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
